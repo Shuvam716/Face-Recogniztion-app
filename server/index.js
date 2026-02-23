@@ -73,11 +73,12 @@ app.delete('/api/faces/purge', async (req, res) => {
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../dist')));
 
-    // Express 5 catch-all syntax for SPA routing
-    app.get('(.*)', (req, res) => {
+    // Proactive SPA Fallback: Handles all non-API routes by serving the index.html
+    app.use((req, res) => {
         res.sendFile(path.join(__dirname, '../dist/index.html'));
     });
 }
+
 
 
 app.listen(PORT, () => {
