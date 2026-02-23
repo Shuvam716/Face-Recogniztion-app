@@ -190,7 +190,7 @@ const CameraFeed: React.FC<CameraFeedProps> = ({ mode, onRegisterSubmit }) => {
                             <div className="flex-row-stack gap-3">
                                 <button onClick={submitRegistration} disabled={!registerName} className="btn-action" style={{ flex: 3 }}>
                                     <Fingerprint className="w-5 h-5" /> Commit Pattern
-                                </button>
+                                </button>&nbsp;
                                 <button onClick={() => setIsRegistering(false)} className="btn-action btn-ghost" style={{ flex: 1 }}>
                                     <X className="w-5 h-5" />
                                 </button>
@@ -219,4 +219,5 @@ const CameraFeed: React.FC<CameraFeedProps> = ({ mode, onRegisterSubmit }) => {
 };
 
 export default CameraFeed;
+
 
