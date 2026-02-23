@@ -164,7 +164,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="site-footer">
-        <p className="label-mini text-slate-700 m-0">Secure Biometric Identification System &copy; 2026 Nexus Core</p>
+        <p className="label-mini text-slate-700 m-0">Secure Biometric Identification System , made by Shuvam Bhattacharya</p>
         <div className="footer-links">
           <Settings className="w-4 h-4 text-slate-700 cursor-pointer hover:text-white transition-colors" />
         </div>
